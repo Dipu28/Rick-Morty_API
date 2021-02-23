@@ -1,0 +1,17 @@
+.list {
+  text-align: center;
+  padding: 10px;
+}
+@media all and (min-width: 768px) {
+  .list {
+    display: grid;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .list {
+    justify-content: center;
+    padding: 20px;
+  }
+}

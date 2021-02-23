@@ -1,0 +1,41 @@
+.aside {
+  display: flex;
+  justify-content: center;
+  height: 82.4vh;
+}
+
+.modal {
+  background: rgb(148, 187, 233);
+  background: linear-gradient(0deg, rgba(148, 187, 233, 1) 0%, rgba(238, 174, 202, 0.9809782608695652) 100%);
+  width: 500px;
+  height: 350px;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  box-shadow: -1px -6px 60px 0px rgba(136, 214, 47, 1);
+
+  &--link {
+    display: block;
+    text-decoration: none;
+    color: rgb(25, 116, 58);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &--img {
+    border-radius: 20px;
+  }
+  &--text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  .modal {
+    flex-direction: column;
+    width: 330px;
+    height: 550px;
+    top: 30%;
+    left: -13%;
+  }
+}

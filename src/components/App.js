@@ -17,9 +17,7 @@ const App = () => {
     });
   }, []);
 
-  //Handler del input
   const handleChange = (value) => {
-    // Filtro el estado characterInfo con lo que la usuaria escribe en el input, meto los resultados en el estado charactersNames
     setInputValue(value);
     const noFound = [
       {
@@ -41,7 +39,6 @@ const App = () => {
   };
   console.log(charactersNames);
 
-  //Renderizo el modal
   const handleCharacterDetail = (props) => {
     const characterId = props.match.params.id;
     const foundCharacter = charactersInfo.find((character) => {
